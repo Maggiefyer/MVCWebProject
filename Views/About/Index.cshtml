@@ -1,0 +1,89 @@
+﻿@model List< MVCWebProject.Models.ClientViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class=" bg-info p-3">
+ <div class="text-center" >
+
+    <h3> Hi, Dear client Welcome to the ABC Internation Business Consultancy limited </h3>
+    <h3 class="display-4">Introduction</h3>
+
+    <div class="container mt-3">  
+        <div class=" bg-info p-3">
+        <img class="img-fluid" src="~/images/money.jpg" alt="MakingMoney" width="1100" height="500">
+        </div>
+    </div>
+    
+
+
+    <p>
+        ABC Business International Consultancy Limited is a leading provider of consulting services to businesses
+        worldwide. We specialize in helping companies navigate complex global markets and overcome challenges that arise
+        in today's rapidly changing business environment.
+
+        At ABC Business International Consultancy Limited, we offer a wide range of consulting services, including
+        market research and analysis, strategy development, financial planning, risk management, and more. Our team of
+        experienced consultants has a deep understanding of the global business landscape and is dedicated to helping
+        our clients achieve their goals.
+
+        We take pride in our ability to develop customized solutions that meet the unique needs of each of our clients.
+        Whether you are a small business looking to expand into new markets or a multinational corporation seeking to
+        optimize your operations, ABC Business International Consultancy Limited has the expertise to help you succeed.
+
+        Thank you for considering ABC Business International Consultancy Limited as your trusted partner in business. We
+        look forward to working with you to achieve your goals and drive growth and success for your business.
+    </p>
+
+ </div>
+    <h3>Our Story </h3>
+    <p>We found the new chance to explore your potential....... </p>
+    <div><a href="https://studio.youtube.com/video/8ubS3koKtk8/edit"/></div>
+    <h3>Our vision</h3>
+        <div>
+
+        <H4>Vision:</H4>
+        <p class="text-bg-info">To be the leading global digital consultancy, delivering innovative, sustainable and efficient solutions for clients to achieve mutual success.</p>
+
+
+        <H4>Aim:</H4>
+        <P class="text-bg-info">To help clients meet their challenges by providing best practices, knowledge, and solutions in the digital realm. Our team of experienced and knowledgeable professionals work together to deliver personalized digital solutions. Our goal is to ensure clients have a comprehensive and effective consulting experience to achieve digital production and management, and to gain a competitive edge in their respective industries.</P>
+    </div>
+    <h3>Our Team</h3>
+    <div><p>We are a team full of passion to the new technic and creativities......</p>
+        <p>
+            Our consulting team is composed of some of the most talented and experienced professionals in the industry. Our team has over 5 years of comprehensive experience, a deep understanding of the global market, and a successful track record of helping businesses tackle digital challenges.
+
+            Our chief advisor, Rashimi Munjal, holds a PhD in computer science from the University of Auckland and has worked with some of the largest companies globally. Our other advisor, Arjinder Singh, is a master's student in computer science, and his expertise in enterprise digital planning has helped our clients achieve digital production and operations.
+
+            Maggie Li is our market research expert with a master's degree in economics from the Central University of Nationalities in China and has over 10 years of in-depth market research experience. Her keen analytical skills and attention to detail help our clients gain a competitive advantage in their respective industries.
+
+            Our team also includes several business digital operation project managers, each with their unique skills and experience. From digital risk management to online and offline operations optimization, our project managers have successfully delivered projects on time and within budget.
+
+            In addition to these advantages, the unique aspect of our team is their ability to collaborate seamlessly to provide the best digital solutions for our clients. From social media marketing strategies to complete online website and email marketing strategies, our advisors work closely together, sharing insights and ideas, to ensure that clients receive a comprehensive and effective consulting experience.
+
+            Outside of work, our team members are equally impressive. From sports enthusiasts to charity volunteers, from participating in world sporting events to supporting various local charitable organizations, they bring a variety of hobbies and interests. Our team comes from Asia, Europe, the Americas, and Oceania. The rich diversity of multicultural backgrounds provides cultural support for us to serve clients worldwide. This combination of expertise and personality makes our team a dynamic and attractive team, ready to tackle any challenge.
+
+            We invite you to get to know our team and discover how we can help your business succeed.
+        </p>
+    </div>
+
+<div>
+    <h5>Our client list</h5>
+
+    <ul>
+        @foreach (var client in Model)
+        {
+            <li>
+
+                <h5>@client.FName</h5>
+                <h5>@client.BusinessDescription</h5>
+
+            </li>
+            ;
+        }
+
+    </ul>
+</div>
+
+</div>
