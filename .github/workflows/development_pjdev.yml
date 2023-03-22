@@ -25,7 +25,7 @@ jobs:
             VALIDATE_ALL_CODEBASE: false
             DEFAULT_BRANCH: "Development"
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            VALIDATE YAML: false
+            VALIDATE_YAML: false
 
   build:
     runs-on: windows-latest
