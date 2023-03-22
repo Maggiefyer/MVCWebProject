@@ -26,8 +26,6 @@ jobs:
           DEFAULT_BRANCH: "master"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_YAML: false
-
-
   
   build:
     runs-on: windows-latest
