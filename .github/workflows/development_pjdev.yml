@@ -29,7 +29,7 @@ jobs:
 
   build:
     runs-on: windows-latest
-
+    needs: run-lint
     steps:
       - uses: actions/checkout@v2
 
@@ -55,7 +55,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Development'
+      name: 'Development01'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
